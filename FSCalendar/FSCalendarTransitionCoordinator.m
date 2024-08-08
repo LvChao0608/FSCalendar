@@ -141,6 +141,7 @@
     });
     [self performAlphaAnimationWithProgress:progress];
     [self performPathAnimationWithProgress:progress];
+    !self.progressBlock ? : self.progressBlock(progress);
 }
 
 - (void)scopeTransitionDidEnd:(UIPanGestureRecognizer *)panGesture

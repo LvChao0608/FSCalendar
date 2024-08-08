@@ -23,6 +23,7 @@ typedef NS_ENUM(NSUInteger, FSCalendarTransitionState) {
 @property (assign, nonatomic) CGSize cachedMonthSize;
 
 @property (readonly, nonatomic) FSCalendarScope representingScope;
+@property (copy, nonatomic) void(^progressBlock)(double progress);
 
 - (instancetype)initWithCalendar:(FSCalendar *)calendar;
 
